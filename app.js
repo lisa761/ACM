@@ -42,10 +42,10 @@ app.post("/send", function(req, res) {
 
     // setup email data with unicode symbols
 	let mailOptions = {
-        from: '"Nodemailer Contact" <liza761c@gmail.com>', // sender address
-        to: 'lisachandra761@gmail.com', // list of receivers
-        subject: 'Node Contact Request', // Subject line
-        text: 'Hello world?', // plain text body
+        from: '"ACM" <email@address>', // sender address
+        to: 'req.body.email', // list of receivers
+        subject: 'req.body.event', // Subject line
+        text: 'Welcome to the event. The schedule is.... ', // plain text body
     };
 
     // send mail with defined transport object
